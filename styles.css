@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+/* auto scroll logo section*/
+
+.company-section {
+    text-align: center;
+    padding: 60px 20px 40px;
+}
+
+.company-section h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0;
+    line-height: 1.4;
+}
+
+.logo-strip-wrapper {
+    margin-top: 40px;
+}
+
+.scroll-strip {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    height: 100px;
+    margin-bottom: 40px;
+    /* gap between strips */
+}
+
+.scroll-track {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scroll-left 50s linear infinite;
+}
+
+.scroll-track.reverse {
+    animation: scroll-right 50s linear infinite;
+}
+
+.strip-img {
+    height: 100px;
+    margin: 0 40px;
+    vertical-align: middle;
+}
+
+.scrollbg {
+    background-color: #0f172a;
+    height: 100%;
+    background-size: cover;
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes scroll-right {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 768px) {
+    .company-section h2 {
+        font-size: 1.6rem;
+    }
+
+    .strip-img {
+        height: 70px;
+        margin: 0 20px;
+    }
+}
+
+/* pagination section */
+.card-container {
+    margin-top: 20px;
+}
+
+.nav-link.active {
+    background-color: #007bff;
+    color: white !important;
+    border-color: white;
+}
+
+.card {
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 18rem;
+    /* Ensure consistent width */
+}
+
+.card-img-top {
+    object-fit: cover;
+    /* Ensure image fits without distortion */
+    height: 200px;
+    /* Optional: Set a fixed height for uniformity */
+}
+
+/* Add custom spacing and alignment fixes */
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.col-md-4 {
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    justify-content: center;
+    /* Center cards horizontally */
+}
+
+/* Ensure no overlap on medium devices */
+@media (min-width: 768px) and (max-width: 991px) {
+    .card {
+        margin: 0 auto 20px auto;
+        /* Center and add bottom margin */
+    }
+
+    .row {
+        justify-content: space-between;
+        /* Distribute cards evenly */
+    }
+}
+
+@media (min-width: 992px) {
+    .col-md-4 {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+.bgpag {
+    background-image: url("https://res.cloudinary.com/dyyp9nzim/image/upload/v1753124110/Screenshot_2025_0722_002315_nizrla.png");
+    height: 100%;
+    background-size: cover;
+}
+
+.icon {
+    height: 150px;
+    width: 180px;
+}
+
+.textc {
+    color: white;
+    background-color: #334155;
+}
+
+/* testimonial section*/
+.img {
+    height: 70px;
+}
+
+.ic {
+    height: 50px;
+}
+
+.testbg {
+    background-color: #0f172a;
+    height: 100%;
+    color: white;
+}
+
+.card-bg {
+    background-color: #1e293b;
+    color: white;
+    border-radius: 12px;
+    height: 350px;
+    width: 500px;
+    padding: 16px;
+}
+
+.feedback-box {
+    display: inline-flex;
+    align-items: center;
+    background-color: #2c2f47;
+    border: 2px solid #f7a600;
+    padding: 10px 20px;
+    border-radius: 30px;
+    color: #f7a600;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.feedback-box .emoji {
+    margin-right: 10px;
+    font-size: 24px;
+}
+
+.cb {
+    background-color: #334155;
+    color: white;
+}
+
+/*claim section*/
+.bgb {
+    background-image: url("https://res.cloudinary.com/dyyp9nzim/image/upload/v1752781368/Screenshot_2025_0718_011117_i7qe7m.png");
+    height: 500px;
+    background-size: cover;
+
+}
+
+h1 {
+    color: white;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+p {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Roboto';
+}
+
+/*claim2 section*/
+form {
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+
+label {
+    margin-top: 15px;
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 5px;
+    border-radius: 4px;
+    border-width: 2px;
+    background-color: #334155;
+    color: white;
+}
+
+button {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #00aaff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.otph1 {
+    font-size: 30px;
+}
+
+.bgc2 {
+    background-color: #0E1624;
+    height: 100%;
+    background-size: cover;
+}
+
+/*footer section*/
+.fic {
+    height: 15px;
+}
+
+.fotterbg {
+    background-color: #0f172a;
+    height: 100%;
+    color: white;
+}
